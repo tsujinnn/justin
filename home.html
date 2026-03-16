@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Website</title>
+    <link rel="stylesheet" href="home.css">
+<style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position:fixed;
+    width: 100%;
+    background: #111;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+/* Show animation */
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Home */
+#home {
+    background: linear-gradient(135deg, #0a0b0f, #1c1f2a, #2d3245, #3b4170); /* dark gradient with multiple shades */
+    color: #5376b6;    
+    display: flex;
+    align-items: flex-start; /* top align */
+    justify-content: left;
+    padding:100px 20px 60px 20px;
+
+}
+
+
+/* About */
+#about{
+    background: linear-gradient(135deg, #1c1c2c, #2a2a4d)
+}
+
+
+/* Skills */
+#skills {
+     background: linear-gradient(135deg, #0d1b2a, #1e3c72, #2a5298);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.box {
+    background: linear-gradient(135deg, #f0e68c, #ffa07a, #90ee90);
+    width: 300px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: 0.3s.
+    font-family: 'courier new', sans-serif;
+    font-size: 20px;
+    color: #222;            
+    text-align: center;                     
+}
+}
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Contact */
+#contact {
+    background: linear-gradient(135deg, #a2cffe, #4a90e2, #1e3c72);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: gray;
+    color: #333;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media(max-width:600px) {
+    #home h1 {
+        font-size: 32px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    
+</nav>
+
+<!-- Home -->
+<section id="home" class="show">
+        
+        <!-- Left side: text -->
+        <div class="home">
+            <h1>CHRIS JUSTIN P. ARAGO</h1>
+            <p>A STUDENT WHO LOVES READING BOOKS, LISTEN TO CLAIRO, BEABADOBEE, LAUFEY, FAYE WEBSTER,MATCHA LOVER, LOVES HISTORY AND LITERATURES , CERTIFIED YEARNER, PERIOD CRAMPS HATER</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+
+        <!-- Right side: image -->
+        <div class="home-image">
+            <img src="tung.jpeg" alt="Profile Picture">
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h1>About Me</h1>
+
+  <div class="about-info">
+    <p>📍 Location: AFP-PNP Batia, Bocaue, Bulacan</p>
+    <p>🎂 Birthday: September 22 2009</p>
+    <p>🗓 Age:16</p>
+    <p>💼 Occupation: Student</p>
+    <p>📏 Height: 5'10"</p>
+    <p>🏀 Hobbies: Playing basketball, playing online games, watching movies, and listening to music. </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h1>My Skills</h1>
+    <br>
+    <div class="skills">
+        <div class="box">ML PLAYER</div>
+        <p>
+            
+        </p>
+        <div class="home-image">
+            <img src="ml.jpg" alt="Profile Picture">
+            </div>
+            <br>
+             <div class="box">BASKETBALL PLAYER</div>
+            <div class="home-image">
+            <img src="ball.jpeg" alt="Profile Picture">
+            </div>
+            <br>
+             <div class="box">CODM PLAYER</div>
+            <div class="home-image">
+            <img src="cod.jpeg" alt="Profile Picture">
+            </div>
+    
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h1>Contact Me</h1>
+
+  <div class="contact-list">
+        <a href="justinarago22@gmail.com">
+      <img src="mail.png" alt="Email">
+      <span>Email: justinarago22@gmail.com</span>
+    </a>
+
+    <a href="tel:+639940942196">
+      <img src="phone.png" alt="Phone">
+      <span>Phone: 0994 094 2196</span>
+    </a>
+
+    <a href=https://www.facebook.com/share/1L5wxjoPGP/ target="_blank">
+      <img src="facebook.png" alt="Facebook">
+      <span>Facebook: Justin Arago</span>
+    </a>
+    <a href="https://www.instagram.com/tsujinnnnnn?igsh=aDU5eDZyN3pjNDU3" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+      <span>Instagram: @tsujinnnnnn</span>
+    </a>
+
+  </div>
+</section>
+<script>
+
+// Smooth fade-in animation when scrolling
+window.addEventListener("scroll", function() {
+    let sections = document.querySelectorAll("section");
+
+    sections.forEach(section => {
+        let position = section.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight / 1.3;
+
+        if(position < screenPosition) {
+            section.classList.add("show");
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
